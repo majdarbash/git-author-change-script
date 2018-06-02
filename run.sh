@@ -27,18 +27,18 @@ echoSuccess ()
 }
 
 
-echoWarn "Hey, I need some information to help you."
+echoWarn "Hey, I need some information to help you.\n\n"
 
-echoWarn "Repository to be cloned: (GIT URL)"
+echoWarn "Repository to be cloned (GIT URL): "
 read REPO_LINK
 
-echoWarn "Old Email: (To be replaced)"
+echoWarn "Old Email (To be replaced): "
 read OLD_EMAIL
 
-echoWarn "Correct Email:"
+echoWarn "Correct Email: "
 read CORRECT_EMAIL
 
-echoWarn "Correct Name:"
+echoWarn "Correct Name: "
 read CORRECT_NAME
 
 
@@ -49,7 +49,7 @@ echoInfo "OLD EMAIL: $OLD_EMAIL"
 echoInfo "CORRECT EMAIL: $CORRECT_EMAIL"
 echoInfo "CORRECT NAME: $CORRECT_NAME"
 
-echoWarn "\nDo you want to continue [y/n]?"
+echoWarn "\nDo you want to continue [y/n]? "
 read CONTINUE
 
 if [ $CONTINUE != "y" ]; then
