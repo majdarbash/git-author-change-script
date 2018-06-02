@@ -8,7 +8,7 @@ set -o errexit
 # @args:    warning-message
 echoWarn ()
 {
-  echo "\033[0;33m$1\033[0m"
+  printf "\033[0;33m$1\033[0m"
 }
 
 # @info:    Prints info messages
@@ -23,7 +23,7 @@ echoInfo ()
 # @args:    success-message
 echoSuccess ()
 {
-  echo "\033[0;32m$1\033[0m"
+  printf "\033[0;32m$1\033[0m"
 }
 
 
