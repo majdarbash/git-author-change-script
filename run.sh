@@ -27,7 +27,7 @@ echoSuccess ()
 }
 
 
-echoWarn "Hey, I need some information to help you.\n"
+echoWarn "Hey, I need some information to help you."
 
 echoWarn "Repository to be cloned: (GIT URL)"
 read REPO_LINK
